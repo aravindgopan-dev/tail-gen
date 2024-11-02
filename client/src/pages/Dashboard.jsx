@@ -32,7 +32,7 @@ function Dashboard() {
           </Link>
         </div>
         <div>
-          <h2 className="text-blue-900 font-extrabold text-xl mb-4">Previous Stories</h2>
+          <h2 className="text-blue-900 font-extrabold text-xl mb-4">Story collection</h2>
           {stories.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {stories.map((story) => (
