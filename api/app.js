@@ -1,6 +1,6 @@
 const path = require("path");
 require("dotenv").config({ path: path.join(__dirname, ".env") });
-
+const cors=require("cors")
 const cookieParser = require("cookie-parser");
 const expressSanitizer = require("express-sanitizer");
 require("dotenv").config();
@@ -17,6 +17,12 @@ const connectDb = require("./db/connectDb");
 
 app.use(express.json());
 app.use(cookieParser());
+
+app.use(cors({
+  origin: "https://test-68wb.onrender.com",
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true  // Allow credentials like cookies if needed
+}));
 
 app.use("/api/v1/stories", /*authorizeMiddleware,*/ storyRoutes);
 app.use("/api/v1/user", userRoutes);
