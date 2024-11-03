@@ -1,4 +1,4 @@
-
+-
 # TaleGen
 
 TaleGen is a web application that helps generate bedtime stories for children. Users can input a brief description of the story, the age and gender of the child, the style of art for illustrations, and the moral of the story to create personalized stories.
