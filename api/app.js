@@ -19,9 +19,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-  origin: "https://test-68wb.onrender.com",
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  credentials: true  // Allow credentials like cookies if needed
+  credentials: true // Allow credentials like cookies if needed
 }));
 
 app.use("/api/v1/stories", /*authorizeMiddleware,*/ storyRoutes);
