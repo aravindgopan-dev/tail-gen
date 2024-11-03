@@ -58,14 +58,14 @@ For Software:
 # Screenshots (Add at least 3)
 
 ![Screenshot1](three.jpeg)
-*Add caption explaining what this shows*
+story creation page
 
 
 ![Screenshot2](two.jpeg)
-*Add caption explaining what this shows*
+story display page
 
 ![Screenshot3](one.jpeg)
-*Add caption explaining what this shows*
+story gallery
 
 
 # Diagrams
