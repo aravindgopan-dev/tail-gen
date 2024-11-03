@@ -70,7 +70,7 @@ story gallery
 
 # Diagrams
 ![Workflow](User.jpg)
-*Add caption explaining your workflow*
+The user submits a descriptions along with parementers for story generation. The server converts these paremeters into a prompt for the gemini api. The server expects a response containing the text for each page of the story and prompts for generating illustrations for each page along with a prompt for a cover page. This is then forwarded to bytedance image generation model. The server recieves the story along with the generated illustrations. The server saves the stories to a mongo db database. The generated images are uploaded to cloudinary using coulidary api. The formatted story book is displayed to the user.
 
 
 
