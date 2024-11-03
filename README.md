@@ -56,14 +56,17 @@ For Software:
 
 
 # Screenshots (Add at least 3)
-![Screenshot1](one.jpeg)
+
+![Screenshot1](three.jpeg)
 *Add caption explaining what this shows*
+
 
 ![Screenshot2](two.jpeg)
 *Add caption explaining what this shows*
 
-![Screenshot3](three.jpeg)
+![Screenshot3](one.jpeg)
 *Add caption explaining what this shows*
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
