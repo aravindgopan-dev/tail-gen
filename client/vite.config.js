@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/api/v1': 'https://tail-gen.onrender.com', // Directly map the path to the target
+      '/api/v1': 'https://tail-gen.onrender.com', // Corrected to remove the extra 'http://'
     },
   },
   plugins: [react()],
