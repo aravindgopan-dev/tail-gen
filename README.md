@@ -1,65 +1,111 @@
--
-# TaleGen
+<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-TaleGen is a web application that helps generate bedtime stories for children. Users can input a brief description of the story, the age and gender of the child, the style of art for illustrations, and the moral of the story to create personalized stories.
+# TaleGen 🎯
 
-## Target Audience
 
-- Children
+## Basic Details
+### Team Name: M_society
 
-## Core Features
 
-- Users can input a small description of a story and specify the number of pages to generate a unique bedtime story.
-- Generated stories include text and illustrations, and can be exported as PDFs.
-- All generated stories are saved for later viewing.
-- User authentication is required for access.
+### Team Members
+- Team Lead: Aravind Gopan - Saintgits Collage of Engineering
+- Member 2: Anwin Jayan - Saintgits Collage of Engineering
+- Member 3: Akshay M - Saintgits Collage of Engineering
 
-## Technology Stack
+### Project Description
+Parents often struggle to find the time and energy to create new bedtime stories for their children every night. Children love hearing bedtime stories, especially ones that involve them as the main character. Our goal is to provide a solution that helps parents create engaging and personalized bedtime stories effortlessly.
 
-- **Frontend:** React
-- **Backend:** Node.js with Express
-- **Database:** MongoDB
-- **APIs Used:** 
-  - Gemini API
-  - Replicate API
-  - Cloudinary for content storage
-- **Payment Gateway:** Users can buy credits required for generating stories.
+### The Problem (that doesn't exist)
+Current story creation tools often lack interactivity and personalization, leading to a static reading experience. Many existing platforms do not integrate images and audio, missing the opportunity to engage young readers fully. This gap results in children not experiencing the benefits of dynamic storytelling that fosters creativity and learning.
 
-## Installation & Setup
+### The Solution (that nobody asked for)
+Talegen offers a unique platform that automatically generates storybooks based on user prompts, integrating vivid images and audible narration. By leveraging AI technology, Talegen personalizes each story to match the child's interests and developmental stage, creating an engaging, interactive experience. This solution not only enhances traditional storytelling but also makes it accessible to children, encouraging imagination and fostering a love for reading.
 
-1. Clone the repository from GitHub.
-2. Install the required packages using npm:
-   ```bash
-   npm install
-   ```
+## Technical Details
+### Technologies/Components Used
+For Software:
+- Javascript
+- React js, Express js
+- @paypal/react-paypal-js, @reduxjs/toolkit, @stripe/stripe-js, axios, html2canvas, jspdf, lucide-react, react, react-dom, react-icons, react-pageflip, react-redux, react-router-dom, redux-persist
+- vite, eslint, @vitejs/plugin-react, daisyui, tailwindcss, Gemini api, Byte Dance image model
 
-### Prerequisites
+### Implementation
+For Software: Our workflow involves implementing an AI story generator based on user-provided prompts using the MERN stack. The user inputs a prompt into the Gemini API, which generates a story according to specified parameters such as page number and style. Gemini also produces additional prompts that serve as inputs for the ByteDance image generation model to create illustration links for each page and the cover page. These image links are then passed to Cloudinary for storage. All of this data is organized into collections in MongoDB: stories, pages, and users.
+# Installation
+npm install
 
-- Node.js
-### API 
-- CREATE STORY    POST -/api/v1/stories/
-- ALL STORY       GET -/api/v1/stories/
-- STORY PAGES     GET -/api/v1/:id/pages
-- STORY DETAILS   GET -/api/v1/:id
-- DELETE STORY    DEL -/api/v1/:id
-- CREATE USER     POST-/api/v1/user/register
-- LOGIN USER      POST-/api/v1/user/login
-## Usage
+# Run
+client:
+ - cd client
+ - npm run dev
+server:
+ - cd api
+ - node app.js
 
-1. Input a small description of the story you want to generate.
-2. Specify the age and gender of the user.
-3. Choose the style of art for illustrations and the moral of the story.
-4. Generate the story, which will be presented with text and illustrations.
-5. Optionally, export the generated story as a PDF.
 
-## Deployment
+### Project Documentation
+For Software:
 
-- The web app is deployed online on Render.
+  - CREATE STORY POST -/api/v1/stories/
+  - ALL STORY GET -/api/v1/stories/
+  - STORY PAGES GET -/api/v1/:id/pages
+  -  STORY DETAILS GET -/api/v1/:id
+  -  DELETE STORY DEL -/api/v1/:id
+  -  CREATE USER POST-/api/v1/user/register
+  -  LOGIN USER POST-/api/v1/user/login
 
-## Contributing
 
-- Contributions are not currently accepted.
+# Screenshots (Add at least 3)
+![Screenshot1](Add screenshot 1 here with proper name)
+*Add caption explaining what this shows*
 
-## License
+![Screenshot2](Add screenshot 2 here with proper name)
+*Add caption explaining what this shows*
 
-- No specific license information provided.
+![Screenshot3](Add screenshot 3 here with proper name)
+*Add caption explaining what this shows*
+
+# Diagrams
+![Workflow](Add your workflow/architecture diagram here)
+*Add caption explaining your workflow*
+
+For Hardware:
+
+# Schematic & Circuit
+![Circuit](Add your circuit diagram here)
+*Add caption explaining connections*
+
+![Schematic](Add your schematic diagram here)
+*Add caption explaining the schematic*
+
+# Build Photos
+![Components](Add photo of your components here)
+*List out all components shown*
+
+![Build](Add photos of build process here)
+*Explain the build steps*
+
+![Final](Add photo of final product here)
+*Explain the final build*
+
+### Project Demo
+# Video
+[Add your demo video link here]
+*Explain what the video demonstrates*
+
+# Additional Demos
+[Add any extra demo materials/links]
+
+## Team Contributions
+- Aravind Gopan: Frontend Developement
+- Anwin Jayan: Backend Development
+- Akshay M: Full stack Developer
+
+---
+Made with ❤️ at TinkerHub Useless Projects 
+
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Static Badge](https://img.shields.io/badge/UselessProject--24-24?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+
+
+
