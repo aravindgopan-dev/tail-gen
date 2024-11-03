@@ -69,7 +69,7 @@ story gallery
 
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
+![Workflow](User.jpg)
 *Add caption explaining your workflow*
 
 
